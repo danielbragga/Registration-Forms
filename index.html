@@ -14,6 +14,8 @@
 
     <title>Frontend Mentor | Intro component with sign up form</title>
 
+    <link rel="stylesheet" href="style.css" />
+
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -26,37 +28,49 @@
     </style>
   </head>
   <body>
-    <div class="p">
-      HEAD
-      <h1>Learn to code by watching others</h1>
+    <div class="container">
+      <div>
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
 
-      <p>
-        See how experienced developers solve problems in real-time. Watching
-        scripted tutorials is great, but understanding how developers think is
-        invaluable.
-      </p>
+      <div>
+        <div class="box box-blue">
+          <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <form action="url">
+          <div class="first-name">
+            <input type="text" id="firstname" placeholder="First Name" />
+            <small>First Name cannot be empty </small>
+          </div>
+          <div class="last-name">
+            <input type="text" id="lastname" placeholder="Last Name" />
+            <small>Last Name cannot be empty</small>
+          </div>
+          <div class="email-adress">
+            <input type="email" id="email" placeholder="Email Address" />
+            <small>Email cannot be empty</small>
+          </div>
+          <div class="password">
+            <input type="password" id="password" placeholder="Password" />
+            <small>Password cannot be empty</small>
+          </div>
+          <div class="button">
+            <button>Claim your free trial</button>
+            <small
+              >By clicking the button, you are agreeing to our
+              <a href="#">Terms and Services</a>
+            </small>
+          </div>
+        </form>
+      </div>
     </div>
-
-    <div class="form">
-      <form action="url">
-        <div class="first-name">
-          <input type="text" id="name" placeholder="First Name" />
-        </div>
-        <div class="last-name">
-          <input type="text" placeholder="Last Name" />
-        </div>
-        <div class="email-adress">
-          <input type="email" placeholder="Email Address" />
-        </div>
-        <div class="password">
-          <input type="password" placeholder="Password" />
-        </div>
-        <div class="button">
-          <button>Claim your free trial</button>
-        </div>
-      </form>
-    </div>
-
-    By clicking the button, you are agreeing to our Terms and Services
   </body>
 </html>
