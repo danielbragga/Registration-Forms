@@ -4,7 +4,7 @@
 
 #### Active Form
 
-![Design preview for the Intro component with sign up form in the active states](design\active-states.jpg)
+![Design preview for the Intro component with sign up form in the active states](./design/active-states.jpg)
 
 ## Welcome! 👋
 
@@ -28,7 +28,7 @@ Your users should be able to:
 
 My project is hosted on Netlify in the link below:
 
-- [Netlify](https://www.netlify.com/)
+- [Netlify](https://s1gn-up-form.netlify.app/)
 
 ## Built with
 
