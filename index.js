@@ -21,7 +21,7 @@ form.addEventListener("submit", (e) => {
   if (email === "") {
     addErrorTo("email", "Email is required");
   } else if (!isValid(email)) {
-    addErrorTo("email", "Email is not valid");
+    addErrorTo("email", "Looks like this is not an email");
   } else removeErrorFrom("email");
 
   if (isValid(email)) {
@@ -45,9 +45,6 @@ function addErrorTo(field, message) {
 function removeErrorFrom(field) {
   const formControl = form[field].parentNode;
   formControl.classList.remove("error");
-
-  const small = form[field].parentNode.querySelector("small");
-  small.style.opacity = "0";
 }
 
 const isValid = (email) => {

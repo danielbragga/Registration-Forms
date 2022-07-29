@@ -92,6 +92,10 @@ input {
     color: hsl(0, 100%, 74%);
 }
 
+.form-control.error input::placeholder {
+    color: hsl(0, 100%, 74%);
+}
+
 input:focus {
     border: 1.3px solid hsl(248, 32%, 49%);
     outline: none;
@@ -99,12 +103,22 @@ input:focus {
 
 .form-control img {
     position: absolute;
-    top: 15px;
+    top: 35%;
+    translate: translateY(-50%);
     right: 15px;
     opacity: 0;
+    height: 20px;
 }
 
 .form-control.error img {
+    opacity: 1;
+}
+
+.form-control small {
+    opacity: 0;
+}
+
+.form-control.error small {
     opacity: 1;
 }
 
