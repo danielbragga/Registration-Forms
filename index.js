@@ -8,6 +8,8 @@ form.addEventListener("submit", (e) => {
   const email = form["email"].value;
   const password = form["password"].value;
 
+  alert("Thank you, " + firstName + "!" + "\nRegistration successful!!");
+
   if (firstName === "") {
     addErrorTo("firstname", "First Name is required");
   } else {
@@ -24,12 +26,10 @@ form.addEventListener("submit", (e) => {
     addErrorTo("email", "Looks like this is not an email");
   } else removeErrorFrom("email");
 
-  if (isValid(email)) {
-    addErrorTo("email", "Email is not valid");
-  }
-
   if (password === "") {
     addErrorTo("password", "Password is required");
+  } else {
+    removeErrorFrom("password");
   }
 });
 
@@ -47,7 +47,7 @@ function removeErrorFrom(field) {
   formControl.classList.remove("error");
 }
 
-const isValid = (email) => {
+const validateEmail = (email) => {
   return String(email)
     .toLowerCase()
     .match(

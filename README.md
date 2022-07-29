@@ -1,4 +1,4 @@
-# Registration Forms
+# Sign up Form
 
 ![Design preview for the Intro component with sign up form](./design/desktop-preview.jpg)
 
