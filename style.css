@@ -72,7 +72,7 @@ p {
     right: 0;
     opacity: 0;
     text-align: 0;
-    color: hsl(0, 100%, 74%) ;
+    color: hsl(0, 100%, 74%);
 
 }
 
@@ -87,9 +87,25 @@ input {
     width: 100%;
 }
 
+.form-control.error input {
+    border-color: hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+}
+
 input:focus {
     border: 1.3px solid hsl(248, 32%, 49%);
     outline: none;
+}
+
+.form-control img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 0;
+}
+
+.form-control.error img {
+    opacity: 1;
 }
 
 button {
